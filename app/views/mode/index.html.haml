@@ -1,0 +1,23 @@
+.mode-home
+  .mode-header
+    .mode-top
+      .mode-top__name
+        user-name
+      .mode-top__icon
+        = link_to "#" do 
+          = icon('fas', 'cog', class: 'icon')
+  .mode-main
+    .btn-list
+      .dif-btn
+        = link_to game_index_path do
+          .mode-btn
+            PVP
+        = link_to "#" do
+          .mode-btn
+            初級
+        = link_to "#" do
+          .mode-btn
+            中級
+        = link_to "#" do
+          .mode-btn
+            上級

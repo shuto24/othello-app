@@ -1,0 +1,20 @@
+.home
+  .header
+    .header-top
+      .header-top__name
+        user-name
+      .header-top__icon
+        = link_to "#" do 
+          = icon('fas', 'cog', class: 'icon')
+  .main
+    .center
+      .center-btn
+        = link_to "#" do 
+          .choose-btn
+            ランキング
+        = link_to mode_index_path do 
+          .choose-btn
+            プレイ
+  .footer
+    .footer-text
+      @© Gackt G.C.T Game. All Rights Reserved. Gackt株式会社

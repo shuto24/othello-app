@@ -1,0 +1,23 @@
+.back {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+
+  .table {
+    position:absolute;
+    top: 45%;
+    left: 45%;
+    margin-top: -257px;
+    margin-left: -257px;
+
+    td {
+      border: 3px solid #fff;
+      width: 80px;
+      height: 80px;
+      background-color: lime;
+      text-align: center;
+      font-size: 3.8vw;
+      cursor: pointer;
+    }
+  }
+}
