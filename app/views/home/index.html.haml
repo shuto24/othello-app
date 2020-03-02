@@ -1,20 +1,60 @@
-.home
+.main-all
   .header
-    .header-top
-      .header-top__name
-        user-name
-      .header-top__icon
-        = link_to "#" do 
-          = icon('fas', 'cog', class: 'icon')
+    .header-main
+      .main-home
+        = link_to "#" do
+          %i.fab.fa-instagram
+          | tbtgram
+      .main-surch
+        %form.form-inline.my-2.my-lg-0
+          %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search", :type => "text"}/
+      .main-icon
+        = link_to game_index_path do
+          %i.far.fa-compass
+        = link_to('#') do
+          %i.far.fa-heart
+        = link_to "#" do
+          %i.fas.fa-home
   .main
-    .center
-      .center-btn
-        = link_to "#" do 
-          .choose-btn
-            ランキング
-        = link_to mode_index_path do 
-          .choose-btn
-            プレイ
-  .footer
-    .footer-text
-      @© Gackt G.C.T Game. All Rights Reserved. Gackt株式会社
+    .post
+      .main-post
+        .post-header
+          .acount-id
+            = link_to('#') do
+              jsbryuji_official
+          .acount-managration
+            = link_to('#') do
+              %i.fas.fa-ellipsis-h
+        .post-picture
+          %img.share-image{:alt => "picture1", :src => "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg"}/
+        .data
+          .data-share
+            .share-icon
+              = link_to('#') do
+                %i.far.fa-heart
+              = link_to('#') do
+                %i.far.fa-comment
+          .data-comments
+            .party-comment
+              .main-comment
+                = link_to('#') do
+                  jsbryuji_official
+                「Numero TOKYO」2.28 ✨✨✨✨✨✨✨@numerotokyo #numerotokyo #JSB #三代目
+            .post-data
+              = link_to('#') do
+                コメント2892件をすべて見る
+            .new-coment
+              .comment-user
+                = link_to('#') do
+                  jsbryuji_official
+                やば😍😍😍😍😍😍
+              .comment-user
+                = link_to('#') do
+                  jsbryuji_official
+                やば😍😍😍😍😍😍
+            .data-time 10時間前
+          .comment-functiou
+            .comment-functiou__add コメントを追加...
+            .comment-functiou__btn
+              = link_to('#') do
+                投稿する

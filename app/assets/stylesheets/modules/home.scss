@@ -1,70 +1,182 @@
-* {
-  box-sizing: border-box;
-}
+.main-all {
+  height: 100%;
+  width: 100%;
+
+  .header {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    z-index: 1;
+    background-color: white;
+    border-bottom:1px solid #BBBBBB	;
 
 
-.header {
-  height: 150px;
-  width: 100vw;
-  background-color: orange;
-
-  .header-top {
-    margin: 0 130px;
-    display: flex;
-    justify-content: space-between;
-    line-height: 150px;
-
-    .header-top__name {
-      font-size: 50px;
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
       margin: auto;
+      line-height: 80px;
+
+      .main-home {
+        font-size: 25px;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
     }
 
-    a {
-      text-decoration: none;
-      color: black;
-      font-size: 25px;
-    }
-  }
-}
-
-.main {
-  height: calc(100vh - 150px - 20px);
-  width: 100vw;
-  background-color: palegreen;
-
-  .center {
-    height: 100%;
-    width: 1300px;
-    background-color: red;
-    text-align: center;
-    margin: auto;
-    
-    .center-btn {
-      width: 400px;
-      margin: auto;
-      padding-top: 220px;
+    .main-icon {
 
       a {
-        line-height: 100px;
         text-decoration: none;
-        color: white;
-        font-size: 30px;
-        width: 50px;
+        color: black;
+        padding-left: 15px;
+        font-size: 25px;
+        -webkit-text-stroke: 1px white
+      }
+    }
+  }
 
-        .choose-btn {
-          height: 100px;
-          width: 400px;
-          background-color: skyblue;
-          margin-bottom: 100px;
-          margin:0 auto 80px;
-          border-radius: 10px;
+  .main {
+    height: 100%;
+    background-color: #F5F5F5;
+
+    .post {
+      width: 50%;
+      margin: auto;
+      overflow: scroll;
+      z-index: 2;
+
+      .main-post {
+        width: 100%;
+        height: calc(100% - 80px);
+        border:1px solid #BBBBBB ;
+        background-color: white;
+        margin-top: 60px;
+
+        .post-header {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 30px;
+          height: 60px;
+          line-height: 60px;
+
+          .acount-id {
+
+            a {
+              text-decoration: none;
+              color: black;
+              font-weight: bold;
+              font-size: 15px;
+            }
+          }
+
+          .acount-managration {
+
+            a {
+              text-decoration: none;
+              line-height: 60px; 
+              color: black;
+              display: block;
+              position: relative;
+              top: 20px;
+            }
+          }
+        }
+        .post-picture > img {
+          width: 100%;
+        }
+
+        .data {
+
+          .data-share {
+            height: 30px;
+            line-height: 30px;
+
+            .share-icon {
+              padding-top: 5px;
+
+              a {
+                text-decoration: none;
+                color: black;
+                padding-left: 15px;
+                font-size: 25px;
+                -webkit-text-stroke: 1px white
+              }
+            }
+          }
+
+          .data-comments {
+            padding: 8px 10px;
+
+            .party-comment {
+              padding-bottom: 5px;
+
+              .main-comment {
+                
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-weight: bold;
+                }
+              }
+            }
+
+            .post-data {
+              padding-bottom: 5px;
+
+              a {
+                text-decoration: none;
+                color: #BBBBBB;
+              }
+            }
+
+            .new-coment {
+              padding-bottom: 5px;
+
+              .comment-user {
+
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-weight: bold;
+                }
+              }
+            }
+
+            .data-time {
+              font-size: 5px;
+              color: #CCCCCC;
+            }
+          }
+
+          .comment-functiou {
+            padding: 0 10px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 50px;
+            border-top:1px solid #EEEEEE;
+
+            &__add {
+              color: #BBBBBB;
+              font-size: 12px;
+            }
+
+            &__btn {
+
+              a {
+                text-decoration: none;
+                color: #4689FF;
+                font-weight: bold;
+              }
+            }
+          }
         }
       }
     }
   }
-}
-
-.footer {
-  height: 20px;
-  text-align: center;
 }

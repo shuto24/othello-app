@@ -9,7 +9,9 @@ window.onload = function(){
 
   for (let puts =0; puts < $tableElements.length; puts++) {
     $tableElements[puts].addEventListener('click', function(){
+      //配列に変換する
       let tableElements = [].slice.call($tableElements);
+      //クリックした位置の取得
       let index = tableElements.indexOf(this);
       putOthello(index);
       changeOrder();
@@ -29,31 +31,31 @@ window.onload = function(){
       order = true;
     }
   }
+}
 
-  changeOthello = (index) => {
-    let prevLeftOthello = $tableElements[index - 2].innerHTML;
-    let prevOthello = $tableElements[index - 1].innerHTML;
-    let nextRightOthello = $tableElements[index + 2].innerHTML;
-    let nextOthello = $tableElements[index + 1].innerHTML;
+changeOthello = (index) => {
+  let prevLeftOthello = $tableElements[index - 2].innerHTML;
+  let prevOthello = $tableElements[index - 1].innerHTML;
+  let nextRightOthello = $tableElements[index + 2].innerHTML;
+  let nextOthello = $tableElements[index + 1].innerHTML;
 
-    if (prevLeftOthello.match(othelloBlack) && prevOthello.match(othelloWhite)) {
-      let targetIndex = index - 1;
-      putOthello(targetIndex, index);
-    }
+  if (prevLeftOthello.match(othelloBlack) && prevOthello.match(othelloWhite)) {
+    let targetIndex = index - 1;
+    putOthello(targetIndex, index);
+  }
 
-    if (nextRightOthello.match(othelloBlack) && nextOthello.match(othelloWhite)) {
-      let targetIndex = index + 1;
-      putOthello(targetIndex, index);
-    }
+  if (nextRightOthello.match(othelloBlack) && nextOthello.match(othelloWhite)) {
+    let targetIndex = index + 1;
+    putOthello(targetIndex, index);
+  }
 
-    if (prevLeftOthello.match(othelloWhite) && prevOthello.match(othelloBlack)) {
-      let targetIndex = index - 1;
-      putOthello(targetIndex, index);
-    }
-
-    if (nextRightOthello.match(othelloWhite) && nextOthello.match(othelloBlack)) {
-      let targetIndex = index + 1;
-      putOthello(targetIndex, index);
-    }
+  if (prevLeftOthello.match(othelloWhite) && prevOthello.match(othelloBlack)) {
+    let targetIndex = index - 1;
+    putOthello(targetIndex, index);
+  }
+  
+  if (nextRightOthello.match(othelloWhite) && nextOthello.match(othelloBlack)) {
+    let targetIndex = index + 1;
+    putOthello(targetIndex, index);
   }
 }
