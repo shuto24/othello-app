@@ -2,7 +2,7 @@ window.onload = function(){
 
   var $tableElements = document.getElementsByTagName('td');
 
-  let order = true; //trueは黒（先行）
+  let order = true; 
   let othelloWhite = '⚪️';
   let othelloBlack = '⚫️';
   let othelloColor = othelloBlack;
@@ -33,29 +33,29 @@ window.onload = function(){
   }
 }
 
-changeOthello = (index) => {
-  let prevLeftOthello = $tableElements[index - 2].innerHTML;
-  let prevOthello = $tableElements[index - 1].innerHTML;
-  let nextRightOthello = $tableElements[index + 2].innerHTML;
-  let nextOthello = $tableElements[index + 1].innerHTML;
+// changeOthello = (index) => {
+//   let prevLeftOthello = $tableElements[index - 2].innerHTML;
+//   let prevOthello = $tableElements[index - 1].innerHTML;
+//   let nextRightOthello = $tableElements[index + 2].innerHTML;
+//   let nextOthello = $tableElements[index + 1].innerHTML;
 
-  if (prevLeftOthello.match(othelloBlack) && prevOthello.match(othelloWhite)) {
-    let targetIndex = index - 1;
-    putOthello(targetIndex, index);
-  }
+//   if (prevLeftOthello.match(othelloBlack) && prevOthello.match(othelloWhite)) {
+//     let targetIndex = index - 1;
+//     putOthello(targetIndex, index);
+//   }
 
-  if (nextRightOthello.match(othelloBlack) && nextOthello.match(othelloWhite)) {
-    let targetIndex = index + 1;
-    putOthello(targetIndex, index);
-  }
+//   if (nextRightOthello.match(othelloBlack) && nextOthello.match(othelloWhite)) {
+//     let targetIndex = index + 1;
+//     putOthello(targetIndex, index);
+//   }
 
-  if (prevLeftOthello.match(othelloWhite) && prevOthello.match(othelloBlack)) {
-    let targetIndex = index - 1;
-    putOthello(targetIndex, index);
-  }
+//   if (prevLeftOthello.match(othelloWhite) && prevOthello.match(othelloBlack)) {
+//     let targetIndex = index - 1;
+//     putOthello(targetIndex, index);
+//   }
   
-  if (nextRightOthello.match(othelloWhite) && nextOthello.match(othelloBlack)) {
-    let targetIndex = index + 1;
-    putOthello(targetIndex, index);
-  }
-}
+//   if (nextRightOthello.match(othelloWhite) && nextOthello.match(othelloBlack)) {
+//     let targetIndex = index + 1;
+//     putOthello(targetIndex, index);
+//   }
+// }
