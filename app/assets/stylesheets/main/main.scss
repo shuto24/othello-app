@@ -1,0 +1,131 @@
+.main {
+  height: 100vh;
+  width: 100%;
+
+  .header {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    z-index: 1;
+    background-color: white;
+    border-bottom:1px solid #BBBBBB	;
+
+
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      margin: auto;
+      line-height: 80px;
+
+      .main-home {
+        font-size: 25px;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+
+    .main-icon {
+
+      a {
+        text-decoration: none;
+        color: black;
+        padding-left: 15px;
+        font-size: 25px;
+        -webkit-text-stroke: 1px white
+      }
+    }
+  }
+
+  .main-body {
+    width: 50%;
+    margin: auto;
+
+    .main-header {
+      width: 50%;
+      height: 230px;
+      margin: auto;
+      
+
+      &__top {
+        display: flex;
+        padding-top: 40px;
+
+        .top-name {
+          font-size: 30px;
+          font-weight: lighter;
+        }
+
+        a {
+          padding-top: 10px;
+          text-decoration: none;
+          color: black;
+          
+          
+          .top-btn {
+            border:1px solid #BBBBBB	;
+            height: 30px;
+            width: 150px;
+            line-height: 30px;
+            padding-left: 10px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-left: 30px;
+          }
+          .second-btn {
+            border:1px solid #BBBBBB	;
+            height: 30px;
+            width: 100px;
+            line-height: 30px;
+            padding-left: 4px;
+            font-weight: bold;
+            border-radius: 10px;
+          }
+        }
+      }
+      &__middle {
+        display: flex;
+        padding-top: 30px;
+        font-size: 16px;
+
+        .middle-post {
+          padding-right: 20px;
+
+        }
+
+        .middle-follower {
+          padding-right: 20px;
+
+        }
+
+        .middle-follow {
+
+        }
+      }
+      &__bottom {
+        padding-top: 20px;
+        font-size: 14px;
+        
+        .bottom-user-name {
+          font-weight: bold;
+        }
+
+        .bottom-profile {
+
+        }
+      }
+    }
+  }
+  .pictures {
+    border-top:1px solid #BBBBBB	;
+    padding-top: 100px;
+
+    .main-picture > img {
+      width: 30%;
+      padding-top: 30px;
+    }
+  }
+}
