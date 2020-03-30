@@ -1,0 +1,40 @@
+.main
+  .header
+    .header-main
+      .main-home
+        = link_to root_path do
+          test
+      .main-surch
+        %form.form-inline.my-2.my-lg-0
+          %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search", :type => "text"}/
+      .main-icon
+        = link_to "#" do
+          %i.far.fa-compass
+        = link_to('#') do
+          %i.far.fa-heart
+        = link_to "#" do
+          %i.fas.fa-home
+  .main
+    .main-body
+      .main-header
+        .main-header__top
+          .top-name yoruhakurai
+          = link_to "#" do
+            .top-btn プロフィールを編集
+          = link_to "#", method: :delete, class: 'btn' do
+            .second-btn ログアウト
+        .main-header__middle
+          .middle-post 投稿86件
+          .middle-follower フォロワー174人
+          .middle-follow フォロー中107人
+        .main-header__bottom
+          .bottom-user-name 芳賀真樹
+          .bottom-profile 弾き語り ／ なりせば 歌 ギター 作詞曲 ／ 紫 ／ 赤ワイン
+      .pictures
+        .main-picture
+          %img.share-image{:alt => "picture1", :src => "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg"}/
+          %img.share-image{:alt => "picture1", :src => "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg"}/
+          %img.share-image{:alt => "picture1", :src => "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg"}/
+          %img.share-image{:alt => "picture1", :src => "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg"}/
+          %img.share-image{:alt => "picture1", :src => "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg"}/
+          %img.share-image{:alt => "picture1", :src => "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg"}/

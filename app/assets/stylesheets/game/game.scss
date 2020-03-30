@@ -1,0 +1,31 @@
+.back {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+
+  .table {
+    position:absolute;
+    top: 35%;
+    left: 35%;
+    margin-top: -250px;
+    margin-left: -180px;
+
+    td {
+      border: 3px solid black;
+      width: 100px;
+      height: 100px;
+      background-color: lime;
+      text-align: center;
+      font-size: 3.8vw;
+      cursor: pointer;
+
+      .black:before {
+        content: "⚫️";
+      }
+    
+      .white:before {
+        content: "⚪️";
+      }
+    }
+  }
+}

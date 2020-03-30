@@ -1,0 +1,263 @@
+.main-all {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  .left-main {
+    width: calc(100% - 300px);
+    .header {
+      position: sticky;
+      top: 0;
+      height: 80px;
+      z-index: 1;
+      background-color: white;
+      border-bottom:1px solid #BBBBBB	;
+
+
+      .header-main {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: auto;
+        line-height: 80px;
+
+        .main-home {
+          font-size: 25px;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+
+      .main-icon {
+
+        a {
+          text-decoration: none;
+          color: black;
+          padding-left: 15px;
+          font-size: 25px;
+          -webkit-text-stroke: 1px white
+        }
+      }
+    }
+
+    .main {
+      height: 100%;
+      background-color: #F5F5F5;
+
+      .post {
+        width: 50%;
+        margin: auto;
+        overflow: scroll;
+        z-index: 2;
+
+        .main-post {
+          width: 100%;
+          height: calc(100% - 80px);
+          border:1px solid #BBBBBB ;
+          background-color: white;
+          margin-top: 60px;
+
+          .post-header {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 30px;
+            height: 60px;
+            line-height: 60px;
+
+            .acount-id {
+
+              a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+              }
+            }
+
+            .acount-managration {
+
+              a {
+                text-decoration: none;
+                line-height: 60px; 
+                color: black;
+                display: block;
+                position: relative;
+                top: 20px;
+              }
+            }
+          }
+          .post-picture > img {
+            width: 100%;
+          }
+
+          .data {
+
+            .data-share {
+              height: 30px;
+              line-height: 30px;
+
+              .share-icon {
+                padding-top: 5px;
+
+                a {
+                  text-decoration: none;
+                  color: black;
+                  padding-left: 15px;
+                  font-size: 25px;
+                  -webkit-text-stroke: 1px white
+                }
+              }
+            }
+
+            .data-comments {
+              padding: 8px 10px;
+
+              .party-comment {
+                padding-bottom: 5px;
+
+                .main-comment {
+                    
+                  a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                  }
+                }
+              }
+              .post-data {
+                padding-bottom: 5px;
+
+                a {
+                  text-decoration: none;
+                  color: #BBBBBB;
+                }
+              }
+
+              .new-coment {
+                padding-bottom: 5px;
+
+                .comment-user {
+
+                  a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              .data-time {
+                font-size: 5px;
+                color: #CCCCCC;
+              }
+            }
+
+            .comment-functiou {
+              padding: 0 10px;
+              height: 50px;
+              display: flex;
+              justify-content: space-between;
+              line-height: 50px;
+              border-top:1px solid #EEEEEE;
+
+              &__add {
+                color: #BBBBBB;
+                font-size: 12px;
+              }
+
+              &__btn {
+
+                a {
+                  text-decoration: none;
+                  color: #4689FF;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sidebar {
+    width: 300px;
+    border-left:1px solid #BBBBBB;
+
+    .sidebar-top {
+      height: 80px;
+      border-bottom:1px solid #BBBBBB;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+
+      .top-title {
+        font-size: 50px;
+        font-weight: bold;
+        margin-left: 85px;
+        line-height: 80px;
+      }
+    }
+    .sidebar-main {
+      height: calc(100% - 80px - 300px);
+      background-color: #F5F5F5;
+      z-index: 1;
+
+      .result-data {
+        width: 200px;
+        margin: auto;
+        padding-top: 50px;
+
+        .games-data {
+          height: 100px;
+          overflow: scroll;
+          z-index: 2;
+
+          .user-name {
+            font-size: 25px;
+          }
+
+          .game-data {
+            display: flex;
+
+            .game-num {
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+    }
+    .side-bottom {
+      height: 300px;
+      background-color: #F5F5F5;
+      padding-left: 60px;
+      position: sticky;
+      bottom: 0;
+
+      .btn-border {
+        display: inline-block;
+        text-align: left;
+        border: 2px solid #9ec34b;
+        font-size: 55px;
+        color: #9ec34b;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 37px;
+        border-radius: 4px;
+        transition: .4s;
+        height: 80px;
+        width: 110px;
+        line-height: 75px;
+      }
+      
+      .btn-border:hover {
+        background-color: #9ec34b;
+        border-color: #cbe585;
+        color: #FFF;
+      }
+    }
+  }
+}
+
