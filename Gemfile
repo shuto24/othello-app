@@ -55,7 +55,7 @@ gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'erb2haml'
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.3.1'
 group :production do
   gem 'pg'
 end
