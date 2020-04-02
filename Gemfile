@@ -56,6 +56,6 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'bootstrap', '~> 4.1.1'
-# group :production do
-#   gem 'pg'
-# end
+group :production do
+  gem 'pg'
+end
